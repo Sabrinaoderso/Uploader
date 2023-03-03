@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fileuploader</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+</head>
+<body>
+
+<div>
+<h1>Signature Generator 1.0</h1>
+    </div>
+<div>
+<h2>Method1: Upload Signaturefile manually</h2>
+<form ref='uploadForm'
+      id='uploadForm'
+      action='http://localhost:3000/upload'
+      method='post'
+      encType="multipart/form-data">
+    <input type="file" name="sampleFile" />
+    <input type='submit' value='Upload!' />
+</form>
+</div>
+
+    <div>
+<h2>Method2: Enter the Signaturefile URL</h2>
+<form id='uploadURL'
+      action='http://localhost:3000/upload'
+      method='post'
+      encType="multipart/form-data">
+    <input type="text" name="sampleURL" />
+    <input type='submit' value='Upload!'/>
+</form>
+</div>
+
+<div>
+    <img src="https://wetter.tagesschau.de/europawelt/index.html" alt="Wetter"><div>
+</div>
+
+
+</body>
+</html>
